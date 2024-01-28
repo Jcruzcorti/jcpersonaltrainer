@@ -1,3 +1,4 @@
+import { CarouselCard } from "@/components/CarouselCards";
 import { NavBar } from "@/components/NavBar";
 import { Presentation } from "@/components/Presentation";
 import Image from "next/image";
@@ -6,12 +7,18 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-around lg:justify-evenly lg:p-0  ">    
+    <main className="flex min-h-screen flex-col items-center justify-between p-6 lg:justify-evenly lg:p-8  ">    
       
       <NavBar/>
       <Presentation/>
-      
-      
+      <CarouselCard/>
+      {/* <CarouselCard/>
+      <CarouselCard/> */}
+
+
+
+
+    
 
       {/* <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a

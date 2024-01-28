@@ -6,7 +6,7 @@ import Link from 'next/link'
 export const NavBar = () => {
 
     return (
-        <div className="flex flex-row z-10 max-w-5xl w-full items-center justify-around font-mono text-sm lg:flex lg:pb-20 lg:justify-between">
+        <div className="flex flex-row z-10 max-w-5xl w-full items-center justify-evenly font-mono text-sm lg:flex lg:pb-20 lg:justify-between">
             <Link href={'/'}>
                 <Image
                     src="/logogym.png"
@@ -18,11 +18,11 @@ export const NavBar = () => {
                 />
             </Link>
 
-            <h3 className="text-base font-light tracking-tight font-serif lg:text-2xl lg:text-slate-50">
+            <h3 className="text-sm font-light tracking-tight font-serif lg:text-2xl lg:text-slate-50">
                 JC PERSONAL TRAINER
             </h3>
 
-            <div className="fixed bottom-0 left-0 flex h-48  p-5 w-full items-end justify-end  lg:static lg:h-auto lg:w-auto lg:bg-none">
+            <div className="fixed flex w-full items-end justify-end  lg:static lg:h-auto lg:w-auto lg:bg-none">
                 <ModeToggle />
             </div>
             

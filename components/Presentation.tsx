@@ -12,7 +12,7 @@ export const Presentation = () => {
        <div className='absolute -z-10 w-full '>
         <Image  src="/gymBanner.jpg"
                 alt="Banner foto gym"
-                className=" w-full "
+                className="w-full "
                 width={1000}
                 height={1000}
                 priority/>
