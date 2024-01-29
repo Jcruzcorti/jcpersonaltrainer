@@ -18,10 +18,10 @@ export const Presentation = () => {
                 priority/>
        </div>
 
-          <h1 className="scroll-m-20  text-3xl text-slate-50 text-center font-serif font-normal tracking-tight lg:text-6xl lg:tracking-wide">
+          <h1 className="scroll-m-20 pt-2 text-3xl text-slate-50 text-center font-sans font-thin tracking-tight lg:text-6xl lg:tracking-wide lg:pt-2">
               Transforma tu vida AHORA
             </h1>
-            <h3 className="scroll-m-20 text-base text-slate-50 text-center font-light font-serif tracking-tight lg:text-2xl ">
+            <h3 className="scroll-m-20  text-base text-slate-50 text-center font-sans font-thin tracking-tight lg:text-2xl ">
               Alcanza tus objetivos fitness con nuestro entrenamiento personalizado y profesional
             </h3>
           <Link href={'/'}>

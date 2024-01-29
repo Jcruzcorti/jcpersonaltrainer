@@ -18,14 +18,14 @@ export const NavBar = () => {
                 />
             </Link>
 
-            <h3 className="text-sm font-light tracking-tight font-serif lg:text-2xl lg:text-slate-50">
+            <h3 className="text-sm text-slate-50 font-thin tracking-tight font-serif lg:text-2xl lg:text-slate-50">
                 JC PERSONAL TRAINER
             </h3>
 
-            <div className="fixed flex w-full items-end justify-end  lg:static lg:h-auto lg:w-auto lg:bg-none">
+            {/* <div className="fixed flex w-full  items-end justify-end lg:static lg:h-auto lg:w-auto lg:bg-none">
                 <ModeToggle />
-            </div>
-            
+            </div> */}
+            <ModeToggle />
         </div>
     )
 }
