@@ -66,7 +66,7 @@ export function CarouselCard() {
                         width="0"
                         height="0"
                         sizes="100vw"
-
+                        priority
                       />
                       {/* </div> */}
                     </CardContent>
