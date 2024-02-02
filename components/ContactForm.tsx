@@ -16,13 +16,20 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import { Textarea } from "./ui/textarea"
 
 
 
 
 const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
+  username: z.string().min(8, {
+    message: "Mínimo 8 caracteres",
+  }),
+  email: z.string().email().min(8, {
+    message: "Formato email",
+  }),
+  text: z.string().min(8, {
+    message: "Mínimo 8 caracteres",
   }),
 })
 
@@ -32,6 +39,9 @@ export function ContactForm() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       username: "",
+      email: "",
+      text: ""
+
     },
   })
 
@@ -42,28 +52,61 @@ export function ContactForm() {
   }
 
 
-  
-
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col mt-8 gap-3 bg-background p-8 rounded-lg drop-shadow-lg dark:drop-shadow-2xl ">
         <FormField
           control={form.control}
           name="username"
-          render={({ field }) => (
+          render={({ field }) => ( 
             <FormItem>
-              <FormLabel>Username</FormLabel>
-              <FormControl>
-                <Input placeholder="shadcn" {...field} />
-              </FormControl>
-              <FormDescription>
-                This is your public display name.
-              </FormDescription>
-              <FormMessage />
+            <FormLabel>Nombre y apellido</FormLabel>
+            <FormControl>
+              <Input placeholder="Nombre completo" {...field} />
+            </FormControl>
+            {/* <FormDescription>
+              This is your public display name.
+            </FormDescription> */}
+            <FormMessage />
+            </FormItem>
+          )}
+          />
+
+          <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => ( 
+            <FormItem>
+            <FormLabel>Mail</FormLabel>
+            <FormControl>
+              <Input placeholder="ejemplo@gmail.com" {...field} />
+            </FormControl>
+            {/* <FormDescription>
+              This is your public display name.
+            </FormDescription> */}
+            <FormMessage />
             </FormItem>
           )}
         />
+
+        <FormField
+          control={form.control}
+          name="text"
+          render={({ field }) => ( 
+            <FormItem>
+            <FormLabel>Mensaje</FormLabel>
+            <FormControl>
+            <Textarea placeholder="Escriba su mensaje aquí" {...field} />
+            </FormControl>
+            {/* <FormDescription>
+              This is your public display name.
+            </FormDescription> */}
+            <FormMessage />
+            </FormItem>
+          )}
+        />
+
         <Button type="submit">Submit</Button>
       </form>
     </Form>
