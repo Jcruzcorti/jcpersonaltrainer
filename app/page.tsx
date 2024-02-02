@@ -1,9 +1,9 @@
+
 import { CarouselCard } from "@/components/CarouselCards";
-import { ContactForm } from "@/components/ContactForm";
+import { ContactAboutUs } from "@/components/ContactAboutUs";
 import { NavBar } from "@/components/NavBar";
 import { Presentation } from "@/components/Presentation";
 import { Services } from "@/components/Services";
-import Image from "next/image";
 
 
 
@@ -15,7 +15,7 @@ export default function Home() {
       <Presentation/>
       <CarouselCard/>
       <Services/>
-      <ContactForm/>
+      <ContactAboutUs/>
       
     </main>
   );

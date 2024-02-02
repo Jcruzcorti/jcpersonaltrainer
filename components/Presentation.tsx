@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Button } from './ui/button'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -24,11 +24,10 @@ export const Presentation = () => {
             <h3 className="scroll-m-20  text-base text-slate-50 text-center font-sans font-thin tracking-tight lg:text-2xl ">
               Alcanza tus objetivos fitness con nuestro entrenamiento personalizado y profesional
             </h3>
-          <Link href={'/'}>
+          <Link href={'#ContactForm'}>
             <Button variant="default" className="w-28 h-auto ">Comienza ya</Button>
           </Link>
       {/* </div> */}
-        
       </div>
   )
 }
