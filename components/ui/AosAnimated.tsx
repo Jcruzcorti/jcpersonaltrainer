@@ -14,7 +14,7 @@ export const AosAnimated = ({children}:Props) => {
 
     useEffect(() => {
         AOS.init({
-          delay: 100,
+          delay: 0,
           duration: 400,
         });
       });
