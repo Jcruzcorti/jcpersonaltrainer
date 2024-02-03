@@ -7,6 +7,7 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 import Image from "next/image";
+import { AosAnimated } from "./ui/AosAnimated";
 
 
 
@@ -42,10 +43,11 @@ export const Services = () => {
                 SERVICIOS
             </h2>
 
-            <div className="flex flex-col lg:flex-row">
+
+            <AosAnimated>
                 {
                     cardServices.map((card) => (
-                        <div key={card.key} className=" p-2 lg:p-4 ">
+                        <div key={card.key} className=" p-2 lg:p-4">
                             <Card className=" bg-background ">
                                 <CardContent className=" relative flex flex-col gap-3 items-center justify-center p-0 lg:p-0 ">
                                     <Image
@@ -55,7 +57,7 @@ export const Services = () => {
                                         width="0"
                                         height="100"
                                         sizes="100vw"
-                                        
+
 
                                     />
                                     <div className="absolute  ">
@@ -69,7 +71,7 @@ export const Services = () => {
                         </div>
                     ))
                 }
-            </div>
+            </AosAnimated>
 
 
         </>
