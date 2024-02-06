@@ -47,7 +47,7 @@ export const Services = () => {
             <AosAnimated>
                 {
                     cardServices.map((card) => (
-                        <div key={card.key} className=" p-2 lg:p-4">
+                        <div key={card.key} className=" p-8 lg:p-4">
                             <Card className=" bg-background ">
                                 <CardContent className=" relative flex flex-col gap-3 items-center justify-center p-0 lg:p-0 ">
                                     <Image

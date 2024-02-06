@@ -50,7 +50,7 @@ export function CarouselCard() {
   return (
     <>
 
-      <div className="relative flex-col p-6 place-items-center pt-28 lg:pt-0 ">
+      <div className="relative flex-col p-12 place-items-center pt-6 lg:pt-0 ">
         <Carousel className="w-full max-w-xs lg:max-w-lg ">
           <CarouselContent>
             {carrouselImages.map((item) => (
@@ -58,7 +58,6 @@ export function CarouselCard() {
                 <div className=" p-1 lg:p-4 " >
                   <Card className="bg-background ">
                     <CardContent className="flex items-center justify-center p-2 lg:p-2">
-                      {/* <div className="h-full w-full overflow-hidden"> */}
                       <Image
                         className="relative rounded-xs w-full h-auto"
                         src={item.img}
@@ -68,7 +67,6 @@ export function CarouselCard() {
                         sizes="100vw"
                         priority
                       />
-                      {/* </div> */}
                     </CardContent>
                   </Card>
                 </div>
