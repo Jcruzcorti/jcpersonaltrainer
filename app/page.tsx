@@ -16,7 +16,7 @@ export default function Home() {
       <Presentation/>
       <CarouselCard/>
       <Services/>
-      <ContactAboutUs/>
+      <ContactAboutUs/>    
       <Footer/>
     </main>
   );
