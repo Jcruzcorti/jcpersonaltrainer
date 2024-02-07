@@ -50,7 +50,7 @@ export function CarouselCard() {
   return (
     <>
 
-      <div className="relative flex-col p-12 place-items-center pt-6 lg:pt-0 ">
+      <div className="relative flex-col p-12 place-items-center pt-6 pb-0 lg:pt-0 lg:pb-0 ">
         <Carousel className="w-full max-w-xs lg:max-w-lg ">
           <CarouselContent>
             {carrouselImages.map((item) => (

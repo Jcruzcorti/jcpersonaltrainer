@@ -22,9 +22,6 @@ export const NavBar = () => {
                 JC PERSONAL TRAINER
             </h3>
 
-            {/* <div className="fixed flex w-full  items-end justify-end lg:static lg:h-auto lg:w-auto lg:bg-none">
-                <ModeToggle />
-            </div> */}
             <ModeToggle />
         </div>
     )

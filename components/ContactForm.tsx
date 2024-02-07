@@ -1,10 +1,8 @@
 "use client"
 
-
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
-
 import { Button } from "@/components/ui/button"
 import {
   Form,
@@ -35,7 +33,6 @@ const formSchema = z.object({
 })
 
 export function ContactForm() {
-  // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -45,11 +42,11 @@ export function ContactForm() {
 
     },
   })
-  
+
   const toastNotification = () => (
     toast("Mensaje enviado", {
-        description: "Su mensaje fue enviado y pronto estaremos en contacto",
-     } ))
+      description: "Su mensaje fue enviado y pronto estaremos en contacto",
+    }))
 
 
   function onSubmit(values: z.infer<typeof formSchema>) {

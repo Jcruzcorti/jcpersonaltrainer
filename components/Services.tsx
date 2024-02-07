@@ -2,8 +2,6 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
-    CardHeader,
     CardTitle,
 } from "@/components/ui/card"
 import Image from "next/image";
@@ -43,11 +41,10 @@ export const Services = () => {
                 SERVICIOS
             </h2>
 
-
             <AosAnimated>
                 {
                     cardServices.map((card) => (
-                        <div key={card.key} className=" p-8 lg:p-4">
+                        <div key={card.key} className=" p-8 pt-0 lg:p-4">
                             <Card className=" bg-background ">
                                 <CardContent className=" relative flex flex-col gap-3 items-center justify-center p-0 lg:p-0 ">
                                     <Image
@@ -57,8 +54,6 @@ export const Services = () => {
                                         width="0"
                                         height="100"
                                         sizes="100vw"
-
-
                                     />
                                     <div className="absolute  ">
                                         <CardTitle className=" text-slate-950 dark:text-slate-50 text-center ">{card.tittle}</CardTitle>
@@ -72,8 +67,6 @@ export const Services = () => {
                     ))
                 }
             </AosAnimated>
-
-
         </>
     )
 }
