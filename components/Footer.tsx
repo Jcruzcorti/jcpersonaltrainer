@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export const Footer = () => {
   return (
-    <div className="flex flex-row items-center justify-center text-center gap-3 p-6 w-full border-t-2 border-bg-background dark:border-bg-background lg:pt-12 lg:p-0">
+    <div className="flex flex-row items-center justify-center text-center gap-3 p-6 w-full border-t-2 border-bg-background dark:border-bg-background lg:p-12 ">
       <h3 className="">©2023 JC Personal Trainer </h3>
       <Link href={'/'}>
         <Image

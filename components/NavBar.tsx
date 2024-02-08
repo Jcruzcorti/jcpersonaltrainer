@@ -18,7 +18,7 @@ export const NavBar = () => {
                 />
             </Link>
 
-            <h3 className="text-sm font-thin tracking-tight font-serif lg:text-2xl lg:text-slate-50">
+            <h3 className="text-base font-thin tracking-tight font-serif lg:text-2xl lg:text-slate-50">
                 JC PERSONAL TRAINER
             </h3>
 

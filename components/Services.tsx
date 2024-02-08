@@ -29,7 +29,7 @@ export const Services = () => {
             key: 3,
             tittle: 'Entrenamiento de fuerza',
             img: '/boy.jpg',
-            description: 'Mejora tu resistencia y tonifica tus músuclos con nuestro programa de entrenamiento de fuerza, diseñado para todos los nieveles'
+            description: 'Mejora tu resistencia y tonifica tus músuclos con nuestro programa de entrenamiento de fuerza, diseñado para todos los niveles'
         },
 
     ]
