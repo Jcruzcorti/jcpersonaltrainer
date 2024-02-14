@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Welcome to Jc Personal Trainer!
 
-## Getting Started
+The project consists of developing a web app for Jc Personal Trainer, a team of personal trainers and professionals from Córdoba Capital
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project details:
+The project is developed with technologies such as JavaScript, Next.js, Typescript, Tailwind css and Shadcn. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+It is an informative Landing Page with the purpose of promoting the brand of this group of professional trainers, detailing their services and giving the possibility to communicate through a form (not working on purpose for now)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Steps to view the site
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In our default terminal, we clone the folder by typing "git clone" + link:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1- git clone https://github.com/Jcruzcorti/jcpersonaltrainer
 
-## Deploy on Vercel
+2- Then, we place ourselves in the root folder of the project, with the command "cd raizcarpinteria" and install all the dependencies inside with the command "npm install".
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3-Finally, in the terminal we carry out the command "npm run dev" or "yarn dev" and the web will open in the predetermined browser after a few seconds/minutes of waiting.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
